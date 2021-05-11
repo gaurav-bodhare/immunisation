@@ -24,7 +24,7 @@ public class MailService {
         try {
             MimeMessageHelper message = new MimeMessageHelper(mimeMessage, isMultipart);
             message.setTo(to);
-            message.setFrom("gauravrajebodhare@gmail.com");
+            message.setFrom("");
             message.setSubject(subject);
             message.setText(content, isHtml);
             if (fileName != null && file != null) {
